@@ -16,9 +16,8 @@ Connector负责处理请求连接（核心功能一）
 
 1个Service包含多个Connector
 
-对应不同类型的链接，如HTTP，HTTPS，APR等
-
-对应不同端口的链接，如HTTP8080，HTTP8081端口等
+1. 多个Connector对应不同类型的链接，如HTTP，HTTPS，APR等
+2. 多个Connector对应不同端口的链接，如HTTP8080，HTTP8081端口等
 
 ## Container
 
