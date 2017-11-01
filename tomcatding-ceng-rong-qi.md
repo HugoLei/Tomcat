@@ -25,3 +25,9 @@ Container作为容器，负责管理Servlet（核心功能二）
 
 1个Service包含1个Container
 
+## 为什么Server包含多个Service？
+
+同一个Service下的Connector是共享的，也即大家都监听相同的端口
+
+如果只想监听特定的端口，不想监听多余的，则可配置新的Service
+
