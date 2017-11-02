@@ -16,7 +16,7 @@
 
 `-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager`
 
-`-server // server模式启动比client慢，但可获得更高的运行性能`
+**`-server`**` `**`// server模式启动比client慢，但可获得更高的运行性能`**
 
 `-verbose:gc`
 
@@ -38,7 +38,7 @@
 
 `-Djava.endorsed.dirs=/home/work/endorsed`
 
-`-classpath /home/work/bin/bootstrap.jar`
+`-classpath /home/work/bin/bootstrap.jar // 指明搜索路径，设置后不按CLASSPATH环境变量去搜索`
 
 `-Dcatalina.base=/home/work`
 
