@@ -16,7 +16,7 @@
 
 `-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager`
 
-**`-server`**` `**`// server模式启动比client慢，但可获得更高的运行性能`**
+``-server`**``// server模式启动比client慢，但可获得更高的运行性能\`\*\*
 
 `-verbose:gc`
 
@@ -47,4 +47,8 @@
 `-Djava.io.tmpdir=/home/work/temp`
 
 `org.apache.catalina.startup.Bootstrap start`
+
+简版的启动命令是：java org.apache.catalina.startup.Bootstrap start
+
+main方法在Bootstrap中，start是运行参数
 
