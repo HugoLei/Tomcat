@@ -2,5 +2,5 @@
 
 .class是编译后机器能够识别的
 
-class load本质就是从.class文件中读取类
+class load本质就是从.class文件中读取类（操作就是读文件）
 
