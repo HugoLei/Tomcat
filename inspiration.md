@@ -8,6 +8,8 @@ class load本质就是从.class文件中读取类（操作就是读文件）
 
 Java的类加载器
 
+Bootstrap ClassLoader\(用C++写的\)
+
 ExtClassLoader
 
 AppClassLoader
@@ -24,5 +26,7 @@ commonLoader = createClassLoader("common", null);
             sharedLoader = createClassLoader("shared", commonLoader);
 ```
 
+![](/assets/import.png)
 
+这三个都是URLClassLoader（Java里的）
 
