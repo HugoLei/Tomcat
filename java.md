@@ -47,13 +47,11 @@ JVM启动入口（？？？）
 | **ExtClassLoader** | `java.ext.dirs` | **扩展类库** |
 | **AppClassLoader** | `java.class.path` | **当前应用的类库** |
 
+Java命令行![](/assets/eclipsemain.png)新建测试工程
 
+main方法路径是testjava.loadclass.TestJavaClassLoader
 
-
-
-Java命令行
-
-新建测试工程![](/assets/eclipsemain.png)1.
+导出为jar包（导出jar时不指明main方法）
 
 -classpath
 
