@@ -6,7 +6,7 @@
 
 运行中的程序可以直接通过System.getProperty\(\)，获取-D配置的属性值。
 
-## Tomcat & System
+## Tomcat & java.lang.System
 
 Tomcat启动后，也会将catalina.properties文件里的内容放入System中。
 
