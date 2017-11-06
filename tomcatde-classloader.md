@@ -2,7 +2,7 @@
 
 Tomcat启动后初始化了三个ClassLoader，commonLoader、catalinaLoader、sharedLoader。
 
-## parentClassLoader
+## Parent ClassLoader
 
 commonLoader没有parent
 
@@ -14,7 +14,7 @@ catalina.properties文件配置示例：
 
 common.loader=${catalina.base}/lib,${catalina.base}/lib/\*.jar,${catalina.home}/lib,${catalina.home}/lib/\*.jar
 
-server.loader= 
+server.loader=
 
 shared.loader=
 
