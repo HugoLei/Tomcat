@@ -49,3 +49,13 @@ JVM启动入口（？？？）
 
 
 
+
+
+Java命令行
+
+新建测试工程![](/assets/eclipsemain.png)1.
+
+-classpath
+
+\(1\).何时需要使用-classpath：当你要编译或执行的类引用了其它的类，但被引用类的.class文件不在当前目录下时，就需要通过-classpath来引入类
+
