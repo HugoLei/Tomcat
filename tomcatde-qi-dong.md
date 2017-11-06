@@ -50,5 +50,5 @@
 
 **简版的启动命令是：java org.apache.catalina.startup.Bootstrap start**
 
-**main方法在Bootstrap类中，Bootstrap类在包org.apache.catalina.startup里，start是运行参数**
+**main方法在Bootstrap类中，Bootstrap类在/home/work/bin/bootstrap.jar里的org.apache.catalina.startup包里，start是运行参数**
 
