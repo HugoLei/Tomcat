@@ -42,10 +42,10 @@ JVM启动入口（？？？）
 
 > **总结：不同的类加载器，加载的是不同路径**
 
-| **BootstrapClassLoader** | **`sun.boot.class.path`** | 核心类库 |
+| **BootstrapClassLoader** | `sun.boot.class.path` | 核心类库 |
 | :--- | :--- | :--- |
-| **ExtClassLoader** | **`java.ext.dirs`** | **扩展类库** |
-| **AppClassLoader** | **`java.class.path`** | **当前应用的类库** |
+| **ExtClassLoader** | `java.ext.dirs` | **扩展类库** |
+| **AppClassLoader** | `java.class.path` | **当前应用的类库** |
 
 
 
