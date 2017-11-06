@@ -47,13 +47,19 @@ JVM启动入口（？？？）
 | **ExtClassLoader** | `java.ext.dirs` | **扩展类库** |
 | **AppClassLoader** | `java.class.path` | **当前应用的类库** |
 
-Java命令行![](/assets/eclipsemain.png)新建测试工程
+java命令行运行jar里的main类
 
-main方法路径是testjava.loadclass.TestJavaClassLoader
+1. 包含manifest的jar包， `java -jar filename.jar`
 
-导出为jar包（导出jar时不指明main方法）
+2. 不含manifest的jar包，`java -classpath  uncle.jar testjava.loadclass.TestJavaClassLoader`
+
+3. main类依赖多个jar时，可以把多个jar打包到一个目录，然后用-Djava.ext.dirs指定该目录，引用依赖的多个jar，`java -Djava.ext.dirs=<多个jar包的目录> com.test.HelloWord`
+
+
 
 -classpath
+
+
 
 \(1\).何时需要使用-classpath：当你要编译或执行的类引用了其它的类，但被引用类的.class文件不在当前目录下时，就需要通过-classpath来引入类
 
