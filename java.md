@@ -51,7 +51,7 @@ JVM启动入口（？？？）
 | **ExtClassLoader** | `java.ext.dirs` | **扩展类库** |
 | **AppClassLoader** | `java.class.path` | **当前应用的类库** |
 
-java命令行运行jar里的main类
+## java命令行运行jar里的main类
 
 1. 包含manifest的jar包， `java -jar filename.jar`
 
@@ -59,7 +59,7 @@ java命令行运行jar里的main类
 
 3. main类依赖多个jar时，可以把多个jar打包到一个目录，然后用-Djava.ext.dirs指定该目录，引用依赖的多个jar（也可以用-classpath，但是需要写明每一个依赖的jar名称），`java -Djava.ext.dirs=<多个jar包的目录> com.test.HelloWord`
 
--classpath
+何时需要使用-classpath？
 
-\(1\).何时需要使用-classpath：当你要编译或执行的类引用了其它的类，但被引用类的.class文件不在当前目录下时，就需要通过-classpath来引入类
+当你要编译或执行的类引用了其它的类，但被引用类的.class文件不在当前目录下时，就需要通过-classpath来引入类
 
