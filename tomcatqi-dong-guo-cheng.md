@@ -18,3 +18,11 @@ Bootstrap\#init\(\)的主要功能：
 
 Bootstrap创建了Catalina实例，并且充当其代理。例如Bootstrap\#load\(\)方法内部调用的就是Catalina\#load\(\)方法。
 
+start参数背后的操作
+
+`initDirs();`
+
+`initNaming(); // Before digester - it may be needed`
+
+
+
