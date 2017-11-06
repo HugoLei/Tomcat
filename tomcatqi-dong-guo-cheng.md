@@ -1,12 +1,20 @@
 ## Catalina实例
 
-Thread.currentThread\(\).setContextClassLoader\(catalinaLoader\);
+Bootstrap\#init\(\)的主要功能：
 
-SecurityClassLoad.securityClassLoad\(catalinaLoader\);
+`创建Tomcat的三个ClassLoader`
 
-catalinaLoader加载org.apache.catalina.startup.Catalina类
+`Thread.currentThread().setContextClassLoader(catalinaLoader);`
 
-实例化一个Catalina
+`SecurityClassLoad.securityClassLoad(catalinaLoader);`
 
-设置该Catalina实例的parentClassLoader为sharedLoader
+`catalinaLoader加载org.apache.catalina.startup.Catalina类`
+
+`实例化一个Catalina`
+
+`设置该Catalina实例的parentClassLoader为sharedLoader`
+
+## Bootstrap与Catalina的关系
+
+Bootstrap创建了Catalina实例，并且充当其代理。例如Bootstrap\#load\(\)方法内部调用的就是Catalina\#load\(\)方法。
 
