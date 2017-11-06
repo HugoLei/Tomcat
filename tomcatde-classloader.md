@@ -10,6 +10,14 @@ catalinaLoader和sharedLoader的parent loader都是commonLoader
 
 ## catalina.properties文件
 
+catalina.properties文件配置示例：
+
+common.loader=${catalina.base}/lib,${catalina.base}/lib/\*.jar,${catalina.home}/lib,${catalina.home}/lib/\*.jar
+
+server.loader= 
+
+shared.loader=
+
 | class loader | catalina.properties文件 |  |
 | :--- | :--- | :--- |
 | commonLoader | common.loader=“xxxxx” |  |
