@@ -8,6 +8,10 @@ commonLoader没有parent
 
 catalinaLoader和sharedLoader的parent loader都是commonLoader
 
+## commonLoader
+
+commonLoader本质是一个java.net.URLClassLoader
+
 ## catalina.properties文件
 
 catalina.properties文件配置示例：
